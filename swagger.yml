@@ -1,0 +1,54 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger REST Article
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/api"
+
+# Paths supported by the server application
+paths:
+  /moveRight:
+      get:
+        operationId: "mouseController.right"
+        description: "moves the mouse right"
+        responses:
+          200:
+            description: "Successfully moved right"
+
+
+  /moveLeft:
+    get:
+      operationId: "mouseController.left"
+      description: "moves the mouse left"
+      responses:
+        200:
+          description: "Successfully moved left"
+
+  /moveUp:
+    get:
+      operationId: "mouseController.up"
+      description: "moves the mouse up"
+      responses:
+        200:
+          description: "Successfully moved up"
+
+  /moveDown:
+    get:
+      operationId: "mouseController.down"
+      description: "moves the mouse down"
+      responses:
+        200:
+          description: "Successfully moved down"
+
+  /click:
+    get:
+      operationId: "mouseController.click"
+      description: "left click on the mouse"
+      responses:
+        200:
+          description: "Successfully clicked"
